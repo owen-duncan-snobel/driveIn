@@ -6,6 +6,7 @@ function NowPlaying(props) {
         <div>
             <div>
                 Now Playing
+                
                     <MovieCards {...props} />
                 {/*  {props.movies.map(el => <div>{el.movieName}</div>)} */}
             </div>

@@ -12,16 +12,17 @@ function App() {
     { movieName: 'Gremlins', rating: 'R', moviePoster: 'https://collectorstudio.com/wp-content/uploads/2018/04/image-4646.jpeg', trailer: 'www.youtube.com' },
   ];
 
-  const screen = [
-    { screenNumber: 1, movie: movies[0], datetime: '9:35pm 2020-10-11' }
+  const screens = [
+    { screenNumber: 1, movie: movies[0], screenTime: '9:35pm', screenDate: '2020-10-11' },
+    { screenNumber: 1, movie: movies[1], screenTime: '9:35pm', screenDate: '2020-10-11' },
+    { screenNumber: 2, movie: movies[0], screenTime: '9:35pm', screenDate: '2020-10-11' },
+    { screenNumber: 3, movie: movies[3], screenTime: '9:35pm', screenDate: '2020-10-11' }
   ]
   return (
     <div className="h-screen">
       <Navigation />
       <NowPlaying
-        screenNumber={screen[0].screenNumber}
-        screenDate={'TODAY'}
-        movies={movies}
+        screens={screens}
       />
     </div>
   );
