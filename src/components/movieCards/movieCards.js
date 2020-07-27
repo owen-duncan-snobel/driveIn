@@ -9,10 +9,10 @@ function MovieCards(props) {
                 let movies = screens.filter((el) => el.screenNumber === movie.screenNumber);
 
                 return (
-                    <div className="flex flex-wrap overflow-hidden">
+                    <div className="flex flex-wrap overflow-hidden lg:w-1/2 mx-auto">
                         {movies.map(movie => {
                             return (
-                                <div className="w-full overflow-hidden sm:w-1/2 bg-red-500 border">
+                                <div className="w-full overflow-hidden sm:w-1/2 mx-auto border">
                                     <img className="w-full max-w-sm object-cover mx-auto" src={movie.movie.moviePoster}></img>
                                     <div className="px-6 py-4">
                                         <div className="font-bold text-xl mb-2">{movie.movie.movieName}</div>
