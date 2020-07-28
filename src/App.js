@@ -19,7 +19,7 @@ function App() {
     { screenNumber: 3, movie: movies[3], screenTime: '9:35pm', screenDate: '2020-10-11' }
   ]
   return (
-    <div className="h-screen">
+    <div className="backgroundGrey">
       <Navigation />
       <NowPlaying
         screens={screens}

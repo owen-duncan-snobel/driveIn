@@ -7,6 +7,7 @@ module.exports = {
         lightPink: '#ECDDE0',
         darkBlue: '#045987',
         lightBlue: '#1FAEDE',
+        backgroundGrey: '#FFFFFF'
       },
     },
     fontFamily: {

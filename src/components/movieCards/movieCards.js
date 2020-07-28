@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function MovieCards(props) {
     const screens = props.screens;
     return (
@@ -10,7 +9,7 @@ function MovieCards(props) {
                 let movies = screens.filter((el) => el.screenNumber === movie.screenNumber);
                 return (
                     <div>
-                        <p className="font-bold text-6xl text-center">Screen {movie.screenNumber}</p>
+                        <p className="font-bold text-6xl text-center text-gray-900">Screen {movie.screenNumber}</p>
                         <div className="flex flex-wrap overflow-hidden">
                             <div className="block sm:flex sm:flex-wrap  overflow-hidden mx-auto gap-2">
                                 {/* For Every Movie at the screen create its card with the information from db */}
