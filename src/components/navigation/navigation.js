@@ -4,6 +4,10 @@ function Navigation() {
 
     const [navbarOpen, setNavbarOpen] = React.useState(false);
 
+    const [activePage, setActivePage] = React.useState(false);
+
+    const toggleClass = () => {
+    }
     return (
         <nav className="flex items-center justify-between flex-wrap p-6">
             <div className="flex items-center flex-shrink-0  mr-6">
@@ -13,23 +17,23 @@ function Navigation() {
             </div>
 
             <div className="w-full block flex-grow md:flex sm:w-auto ">
-                <div className="text-sm hidden md:block">
-                    <a href="#" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-grey-100" >
+                <div className="text-sm font-semibold hidden md:block">
+                    <a href="#" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-gray-900"  >
                         Now Playing
                     </a>
-                    <a href="#" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-grey-100" >
+                    <a href="#" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4  text-gray-500"  >
                         Coming Soon
                     </a>
-                    <a href="#" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-grey-100" >
+                    <a href="#" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-gray-500"  >
                         Buy Tickets
                     </a>
-                    <a href="#" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-grey-100" >
+                    <a href="#" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-gray-500"  >
                         Food
                     </a>
-                    <a href="#" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-grey-100" >
+                    <a href="#" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-gray-500"  >
                         Theatre Info
                     </a>
-                    <a href="#" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-grey-100" >
+                    <a href="#" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-gray-500"  >
                         Prices
                     </a>
                 </div>
