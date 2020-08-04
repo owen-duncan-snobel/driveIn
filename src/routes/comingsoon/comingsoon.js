@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import moment from 'moment';
 import MovieCards from '../../components/movieCards/movieCards';
 
-class NowPlaying extends Component {
+class ComingSoon extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -11,7 +11,7 @@ class NowPlaying extends Component {
     }
     async componentDidMount() {
         let currentDate = moment().format('YYYY-MM-DD');
-        let url = 'http://localhost:1337/screens?screenDate=' + currentDate;
+        let url = 'http://localhost:1337/screens?screenDate_gt=' + currentDate;
         try {
             fetch(url, {
                 method: 'GET'
@@ -39,4 +39,4 @@ class NowPlaying extends Component {
 
         )
     }
-} export default NowPlaying;
+} export default ComingSoon;
