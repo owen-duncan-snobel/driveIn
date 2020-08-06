@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ComingSoon from '../../routes/comingsoon/comingsoon';
 import NowPlaying from '../../routes/nowplaying/nowplaying';
+import UnderConstruction from '../../routes/underconstruction/underconstruction.js';
 
 function Navigation() {
 
@@ -51,6 +52,18 @@ function Navigation() {
                 </Route>
                 <Route path="/nowplaying">
                     <NowPlaying />
+                </Route>
+                <Route path="/buytickets">
+                    <UnderConstruction />
+                </Route>
+                <Route path="/food">
+                    <UnderConstruction />
+                </Route>
+                <Route path="/theatreinfo">
+                    <UnderConstruction />
+                </Route>
+                <Route path="/prices">
+                    <UnderConstruction />
                 </Route>
                 <Route path="/">
                     <NowPlaying />
