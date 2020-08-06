@@ -3,11 +3,10 @@ import React from 'react';
 function Cards(props) {
     let movie = props.screen.movie;
     let screenTime = props.screenTime;
-    let url = 'http://localhost:1337';
 
     return (
         <div className="overflow-hidden border rounded-lg mx-auto relative">
-            <img className="w-full max-w-sm object-cover" src={url + movie.moviePoster.url} alt={movie.movieName}  ></img>
+            <img className="w-full max-w-sm object-cover" src={movie.moviePoster.url} alt={movie.movieName + ' Poster'}  ></img>
             <div className="flex">
                 <div className="mt-24 relative"></div>
                 <div className="w-1/2">
