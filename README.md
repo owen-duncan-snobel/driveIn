@@ -1,6 +1,5 @@
-<center>
-  <img height="100px" src="https://github.com/owen-duncan-snobel/driveIn/blob/master/images/drivein.png?raw=true">
-</center>
+
+  <img height="100px" class="center" src="https://github.com/owen-duncan-snobel/driveIn/blob/master/images/drivein.png?raw=true">
 
  <p align="center"> <h2>Drive in </h2> </p>
  
