@@ -2,8 +2,8 @@
   <img height="100px" src="https://github.com/owen-duncan-snobel/driveIn/blob/master/images/drivein.png?raw=true">
 </center>
 
-<center> <h2>Drive in </h2>
- </center>
+ <p> <h2>Drive in </h2> </p>
+ 
  
 [Drive in](https://driveinfrontend.herokuapp.com) is a web app designed to modernise drive in theatres to a common interactive theme.
 
