@@ -18,7 +18,7 @@ function Navigation() {
             <nav className="flex items-center justify-between flex-wrap p-6">
                 <div className="flex items-center flex-shrink-0  mr-6">
                     <Link to="/">
-                        <span className="font-bold text-4xl tracking-tight bg-indigo-400 p-3">5 Drive in</span>
+                        <span className="font-bold text-4xl tracking-tight bg-indigo-400 p-3">Drive in</span>
                     </Link>
                 </div>
 
