@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 import ComingSoon from '../../routes/comingsoon/comingsoon';
 import NowPlaying from '../../routes/nowplaying/nowplaying';
 import UnderConstruction from '../../routes/underconstruction/underconstruction.js';
@@ -18,31 +18,31 @@ function Navigation() {
 
             <nav className="flex items-center justify-between flex-wrap p-6">
                 <div className="flex items-center flex-shrink-0  mr-6">
-                    <Link to="/">
+                    <NavLink exact to="/">
                         <span className="font-bold text-4xl tracking-tight bg-indigo-400 p-3">Drive in</span>
-                    </Link>
+                    </NavLink>
                 </div>
 
                 <div className="w-full block flex-grow md:flex sm:w-auto ">
                     <div className="text-sm font-semibold hidden md:block">
-                        <Link to="/nowplaying" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-gray-900"  >
+                        <NavLink exact to="/nowplaying" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-gray-500" activeClassName="text-gray-900" >
                             Now Playing
-                    </Link>
-                        <Link to="/comingsoon" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4  text-gray-500"  >
+                    </NavLink>
+                        <NavLink exact to="/comingsoon" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4  text-gray-500" activeClassName="text-gray-900" >
                             Coming Soon
-                    </Link>
-                        <Link to="/buytickets" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-gray-500"  >
+                    </NavLink>
+                        <NavLink exact to="/buytickets" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-gray-500" activeClassName="text-gray-900" >
                             Buy Tickets
-                    </Link>
-                        <Link to="/food" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-gray-500"  >
+                    </NavLink>
+                        <NavLink exact to="/food" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-gray-500" activeClassName="text-gray-900" >
                             Food
-                    </Link>
-                        <Link to="/theatreinfo" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-gray-500"  >
+                    </NavLink>
+                        <NavLink exact to="/theatreinfo" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-gray-500" activeClassName="text-gray-900" >
                             Theatre Info
-                    </Link>
-                        <Link to="/prices" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-gray-500"  >
+                    </NavLink>
+                        <NavLink exact to="/prices" className="block mt-4 sm:inline-block lg:mt-0  hover: mr-4 text-gray-500" activeClassName="text-gray-900" >
                             Prices
-                    </Link>
+                    </NavLink>
                     </div>
                 </div>
             </nav>
