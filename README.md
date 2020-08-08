@@ -19,6 +19,6 @@ It uses [Strapi](https://github.com/strapi/strapi) a headless CMS as the backend
 
 For the front end it utilizes React and tailwind to allow for easy customization of the components to match your needs.
 
-<p  align="center">
 <img src="https://github.com/owen-duncan-snobel/driveIn/blob/master/images/now_playing_ex.png?raw=true">
-</p>
+
+<img src="https://github.com/owen-duncan-snobel/driveIn/blob/master/images/strapi_movie_ex.png?raw=true">
