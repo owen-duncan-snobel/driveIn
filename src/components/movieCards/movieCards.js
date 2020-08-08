@@ -39,7 +39,6 @@ function MovieCards(props) {
                                 return (
                                     <div>
                                         <p className="font-bold text-5xl text-center text-gray-900">Screen {screenNumber}</p>
-
                                         <Screens screens={screens} />
                                     </div>
                                 )
