@@ -5,7 +5,6 @@ import Screens from './screens/screens';
 
 function MovieCards(props) {
 
-
     // * All Screens is all the entries that have been fetched from the DB Table Screens
     const allScreens = props.screens;
     // * Sort then Group all the screens together by date in ascending order
