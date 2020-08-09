@@ -32,12 +32,12 @@ function MovieCards(props) {
                     // * For Every Screen on the specific date you need to display all movies on each screen
                     return (
                         <div>
-                            <p className="font-bold text-5xl text-center text-gray-900">{screenDate}</p>
+                            <p className="font-bold sm:text-2xl md:text-4xl text-center text-gray-900">{screenDate}</p>
                             {screensOnDate.map(screens => {
                                 let screenNumber = screens[0];
                                 return (
-                                    <div>
-                                        <p className="font-bold text-5xl text-center text-gray-900">Screen {screenNumber}</p>
+                                    <div key={screens._id}>
+                                        <p className="font-bold text-3xl text-center text-gray-900">Screen {screenNumber}</p>
                                         <Screens screens={screens} />
                                     </div>
                                 )
