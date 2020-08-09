@@ -5,7 +5,7 @@ function Cards(props) {
     let screenTime = props.screenTime;
 
     return (
-        <div className="overflow-hidden border rounded-lg mx-auto relative">
+        <div className="overflow-hidden border rounded-lg mx-auto relative m-2 shadow-xs" >
             <img className="w-full max-w-sm h-64 object-cover pb-2" src={movie.moviePoster.url} alt={movie.movieName + ' Poster'}  ></img>
             <div className="flex">
                 <div className="mt-24 relative"></div>

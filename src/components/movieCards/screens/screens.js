@@ -5,7 +5,6 @@ import Cards from '../cards/cards';
 function Screens(props) {
     // * screens index 1 refers to the movies on the selected screen 
     let screens = props.screens[1];
-
     return (
         <div className="flex flex-wrap overflow-hidden">
             <div className="block sm:flex sm:flex-wrap  overflow-hidden mx-auto gap-2">
@@ -20,7 +19,7 @@ function Screens(props) {
                     }
 
                     return (
-                        <Cards screen={screen} screenTime={screenTime} />
+                        <Cards screen={screen} screenTime={screenTime} key={screen.id} />
                     )
                 })}
             </div>
