@@ -1,4 +1,4 @@
-import React, { setState, useEffect, useState } from 'react';
+import React, { Component } from 'react';
 import moment from 'moment';
 import MovieCards from '../../components/movieCards/movieCards';
 
@@ -430,10 +430,14 @@ return (
     <ComingSoon screens={screensDate} />
 )
  */
-const ComingSoon = () => {
-	const [screens, setScreens] = useState([{}]);
-
-	useEffect(() => {
+class ComingSoon extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			screens: props.screens,
+		};
+	}
+	async componentDidMount() {
 		try {
 			let currentDate = moment().format('YYYY-MM-DD');
 			let url =
@@ -450,18 +454,18 @@ const ComingSoon = () => {
 						return res.json();
 					}
 				})
-				.then((data) => setScreens(data));
+				.then((data) => this.setState({ screens: data }));
 		} catch (error) {
 			console.log(error);
 		}
-	}, [screens]);
-
-	return (
-		<div>
+	}
+	render() {
+		return (
 			<div>
-				<MovieCards screens={screens} />
+				<MovieCards screens={this.state.screens} />
 			</div>
-		</div>
-	);
-};
+		);
+	}
+}
+
 export default ComingSoon;
