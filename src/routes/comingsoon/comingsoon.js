@@ -437,7 +437,7 @@ const ComingSoon = () => {
 		try {
 			let currentDate = moment().format('YYYY-MM-DD');
 			let url =
-				'https://driveindashboard.herokuapp.com/screens?screenDate_gt=' +
+				'https://driveindashboard.herokuapp.com/screens?screenDate=' +
 				currentDate;
 
 			fetch(url, {
@@ -454,7 +454,8 @@ const ComingSoon = () => {
 		} catch (error) {
 			console.log(error);
 		}
-	});
+	}, [screens]);
+
 	return (
 		<div>
 			<div>
