@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -10,8 +10,8 @@ import NowPlaying from '../../routes/nowplaying/nowplaying';
 import UnderConstruction from '../../routes/underconstruction/underconstruction.js';
 import Prices from '../../routes/prices/prices';
 
-function Navigation() {
-	const [navbarOpen, setNavbarOpen] = React.useState(false);
+const Navigation = () => {
+	const [navbarOpen, setNavbarOpen] = useState(false);
 
 	return (
 		<Router>
@@ -190,5 +190,5 @@ function Navigation() {
 			</Switch>
 		</Router>
 	);
-}
+};
 export default Navigation;

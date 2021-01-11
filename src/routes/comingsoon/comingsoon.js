@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { setState, useEffect, useState } from 'react';
 import moment from 'moment';
 import MovieCards from '../../components/movieCards/movieCards';
 
@@ -430,43 +430,37 @@ return (
     <ComingSoon screens={screensDate} />
 )
  */
-class ComingSoon extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      screens: props.screens
-    }
-  }
-  async componentDidMount() {
-    try {
-      let currentDate = moment().format('YYYY-MM-DD');
-      let url = 'https://driveindashboard.herokuapp.com/screens?screenDate_gt=' + currentDate;
+const ComingSoon = () => {
+	const [screens, setScreens] = useState([{}]);
 
-      fetch(url, {
-        method: 'GET'
-      })
-        .then(res => {
-          if (!res.ok) {
-            throw Error(res.statusText);
-          } else {
-            return (res.json());
-          }
-        })
-        .then(data => this.setState({ screens: data }))
+	useEffect(() => {
+		try {
+			let currentDate = moment().format('YYYY-MM-DD');
+			let url =
+				'https://driveindashboard.herokuapp.com/screens?screenDate_gt=' +
+				currentDate;
 
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
-  render() {
-    return (
-      <div>
-        <div>
-          <MovieCards screens={this.state.screens} />
-        </div>
-      </div>
-
-    )
-  }
-} export default ComingSoon;
+			fetch(url, {
+				method: 'GET',
+			})
+				.then((res) => {
+					if (!res.ok) {
+						throw Error(res.statusText);
+					} else {
+						return res.json();
+					}
+				})
+				.then((data) => setScreens(data));
+		} catch (error) {
+			console.log(error);
+		}
+	});
+	return (
+		<div>
+			<div>
+				<MovieCards screens={screens} />
+			</div>
+		</div>
+	);
+};
+export default ComingSoon;

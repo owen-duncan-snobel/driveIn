@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-function Prices() {
+const Prices = () => {
 	const [getPrices, setPrices] = useState({ prices: [] });
 
 	return (
@@ -8,5 +8,5 @@ function Prices() {
 			<div className="text-3xl font-bold">Prices</div>
 		</div>
 	);
-}
+};
 export default Prices;
