@@ -1,4 +1,4 @@
-import React, { setState, useEffect, useState } from 'react';
+import React, { Component } from 'react';
 import moment from 'moment';
 import MovieCards from '../../components/movieCards/movieCards';
 /**
@@ -230,10 +230,14 @@ return (
     <NowPlaying screens={screensDate} />
 )
  */
-const NowPlaying = () => {
-	const [screens, setScreens] = useState([{}]);
-
-	useEffect(() => {
+class NowPlaying extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			screens: props.screens,
+		};
+	}
+	componentDidMount() {
 		try {
 			let currentDate = moment().format('YYYY-MM-DD');
 			let url =
@@ -250,16 +254,18 @@ const NowPlaying = () => {
 						return res.json();
 					}
 				})
-				.then((data) => setScreens(data));
+				.then((data) => this.setState({ screens: data }));
 		} catch (error) {
 			console.log(error);
 		}
-	}, [screens]);
-	return (
-		<div>
-			<MovieCards screens={screens} />
-		</div>
-	);
-};
+	}
+	render() {
+		return (
+			<div>
+				<MovieCards screens={this.state.screens} />
+			</div>
+		);
+	}
+}
 
 export default NowPlaying;

@@ -437,11 +437,11 @@ class ComingSoon extends Component {
 			screens: props.screens,
 		};
 	}
-	async componentDidMount() {
+	componentDidMount() {
 		try {
 			let currentDate = moment().format('YYYY-MM-DD');
 			let url =
-				'https://driveindashboard.herokuapp.com/screens?screenDate=' +
+				'https://driveindashboard.herokuapp.com/screens?screenDate_gt=' +
 				currentDate;
 
 			fetch(url, {

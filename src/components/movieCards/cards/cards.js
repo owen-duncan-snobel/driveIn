@@ -38,7 +38,7 @@ const Cards = (props) => {
 										className=""
 										aria-label="BUY TICKET"
 									>
-										BUY TICKET
+										BUY TICKETS
 									</button>
 									<button className="" aria-label="TRAILER">
 										TRAILER
