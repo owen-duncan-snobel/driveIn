@@ -1,7 +1,6 @@
 require("dotenv").config({
   path: `.env`,
 })
-
 module.exports = {
   siteMetadata: {
     title: `Drive In (Gatsby, Strapi, TailwindCSS)`,
