@@ -1,4 +1,5 @@
 import React from "react"
+import Img from "gatsby-image"
 
 const Cards = ({ screen, screenTime }) => {
   let movie = screen.movie
