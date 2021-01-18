@@ -18,10 +18,7 @@ const ComingSoon = ({ data }) => {
 export default ComingSoon
 export const query = graphql`
   query comingSoon {
-    allStrapiScreens(
-      limit: 100
-      sort: { fields: [screenDate, screenTime], order: ASC }
-    ) {
+    allStrapiScreens(limit: 100, sort: { fields: screenTime, order: ASC }) {
       group(field: screenDate) {
         edges {
           node {
