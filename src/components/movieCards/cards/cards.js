@@ -3,7 +3,6 @@ import NoSSR from "react-no-ssr"
 
 const Cards = ({ screen, screenTime }) => {
   let movie = screen.movie
-  console.log(movie)
   return (
     <NoSSR>
       <div className="overflow-hidden border rounded-lg mx-auto relative m-2 shadow-xs">
