@@ -5,4 +5,4 @@
  */
 
 // You can delete this file if you're not using it
-import "../drivein-frontend/src/styles/tailwind.css"
+import "./src/components/tailwind.css"
