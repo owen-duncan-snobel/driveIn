@@ -5,15 +5,20 @@ import MovieCards from "../components/movieCards/movieCards"
 import Layout from "../components/layout"
 
 const ComingSoon = ({ data }) => {
-  const currentDate = moment().format("YYYY-MM-DD")
-  const screens = data.allStrapiScreens.group.filter(
-    el => el.fieldValue > currentDate
-  )
-  return (
-    <Layout>
-      <MovieCards screens={screens} />
-    </Layout>
-  )
+  try {
+    const currentDate = moment().format("YYYY-MM-DD")
+    const screens = data.allStrapiScreens.group.filter(
+      el => el.fieldValue > currentDate
+    )
+    return (
+      <Layout>
+        <MovieCards screens={screens} />
+      </Layout>
+    )
+  } catch (error) {
+    console.log(error)
+    return <div></div>
+  }
 }
 export default ComingSoon
 export const query = graphql`
