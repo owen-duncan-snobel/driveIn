@@ -14,7 +14,9 @@
 
 It uses [Strapi](https://github.com/strapi/strapi) a headless CMS as the backend to enable quick and concise input of the content that will be displayed (ex. Movies, Menu items, Screens). A default schema has been designed to allow for easy migration to the new system without the need to rewrite a database schema from the ground up. Strapi also allows the Admin to change permissions as well as update the schema and content types as needed.
 
-For the front end it utilizes React and tailwind to allow for easy customization of the components to match your needs.
+For the frontend it is using Gatsby and TailwindCSS to allow for easy customization of the components to match your needs. Both Gatsby and Tailwind allow for minimized file sizes for faster loading. 
+
+For the backend it is using Strapi. It is also utilizing a Webhook that triggers a Gatsby rebuild whenever the Screens / Movies / Prices .. etc update for up to date current information on the frontend.  
 
 <img src="https://github.com/owen-duncan-snobel/driveIn/blob/master/images/now_playing_ex.png?raw=true">
 
