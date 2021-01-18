@@ -18,10 +18,7 @@ const NowPlaying = ({ data }) => {
 export default NowPlaying
 export const query = graphql`
   query nowPlaying {
-    allStrapiScreens(
-      limit: 100
-      sort: { fields: [screenDate, screenTime], order: ASC }
-    ) {
+    allStrapiScreens(limit: 100, sort: { fields: screenTime, order: ASC }) {
       group(field: screenDate) {
         edges {
           node {
