@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Owen Duncan-Snobel",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
     "gatsby-plugin-manifest": "^2.6.1",
@@ -17,6 +18,7 @@
     "gatsby-source-strapi": "0.0.12",
     "gatsby-transformer-sharp": "^2.6.0",
     "moment": "^2.29.1",
+    "path": "^0.12.7",
     "postcss": "^8.2.4",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
