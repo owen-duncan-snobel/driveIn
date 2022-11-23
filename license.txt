@@ -1,1 +1,5 @@
 wowow
+
+Use of the Software by any person to train, teach, prompt, populate, or otherwise further or facilitate any so-called generative artificial intelligence, generative algorithm, generative adversarial network, generative model, or similar or related activity (or to attempt to perform any of the foregoing acts or activity), whether in connection with any so-called machine learning, deep learning, neural network, or similar or related framework, system, or model or otherwise, is strictly prohibited and beyond the limited scope of this license, absent prior payment to licensor of the licensing fee of the amount of $50 at 
+
+ http://localhost:3000/payments?license_id=7da07689-93c2-4a43-8b6f-ea8ddcf344ee
